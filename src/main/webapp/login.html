@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<title>登录速记账号</title>
+<link rel="stylesheet" href="css/register.css">
+<link rel="stylesheet" href="css/login.css">
+<script type="text/javascript" src="js/basevalue.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/loginandreg/login.js"></script>
+<script type="text/javascript" src="js/jquery.base64.js"></script>
+</head>
+<body>
+<div class="content">
+<div class="all">
+	<h2>登&nbsp录</h2>
+	<div class="file">
+		<form id="form">
+			<div class="row">
+				<input type="text" value="" name="phone" placeholder="QQ邮箱"
+					class="text large" id="email">
+				<input type="text" value="" class="error" readonly="readonly" id="erroremail">
+			</div>
+			<div class="row">
+				<input type="password" class="text large" name="password"
+					placeholder="密码" class="text large" id="pwd">
+				<input type="text" value="" class="error" readonly="readonly" id="errorpwd">
+			</div>
+			<div class="row">
+				
+				<input type="checkbox" class="text large" name="remberpwd"  id="reb">
+				<label id="rem">记住我</label>
+				<a href="findpwd.html" id="forget">忘记密码</a>
+			</div>
+			<div class="row">
+				<input type="button" value="登录" id="submit">
+				<input type="hidden" id="send-id"
+					value="5c31c376-95e8-4f25-9f37-a24968a17491">
+			</div>
+			<div class="row right">
+				<span class="text light" id="textlight">没有帐号，</span> <a
+					href="register.html" class="text dark">立即注册</a>
+			</div>
+		</form>
+	</div>
+	</div>
+	
+<div class="platform">
+<div class="desc">
+使用第三方帐号快速登录
+</div>
+<div id="login-qq" class="platform-item" title="使用QQ登录">
+<i class="iconfont">&#xe65e;</i>
+</div>
+<div id="login-wechat" class="platform-item" title="使用微信登录">
+<i class="iconfont">&#xe654;</i>
+</div>
+</div>
+</div>
+
+</body>
+</html>

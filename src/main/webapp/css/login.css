@@ -1,0 +1,43 @@
+#form .row #reb{
+	width:4%;
+	height:18px;
+	padding:2px;
+	margin-left:60px;
+}
+.content{
+	width:1357px;
+	height:629px;
+}
+.all{
+	margin-top:6%;
+	
+}
+.platform{
+	margin-left:-1%;
+}
+.all h2{
+	margin-left:-1%;
+	
+}
+#form .row span{
+	margin-left:-20px;
+}
+#form .row #rem{
+	width:4%;
+	height:23px;
+	padding:2px;
+	margin-left:-20px;
+	padding-right:170px;
+	color:#000000;
+	font-size: 16px;
+}
+#form .row #forget{
+	width:4%;
+	height:23px;
+	padding:2px;
+	margin-right:90px;
+	margin-top:3px;
+	text-decoration:none;
+	color:#000000;
+	font-size: 16px;
+}

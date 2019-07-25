@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册速记账号</title>
+<link rel="stylesheet" href="css/register.css">
+<script type="text/javascript" src="js/basevalue.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/loginandreg/register.js"></script>
+<script type="text/javascript" src="js/loginandreg/randomver.js"></script>
+</head>
+<body>
+<div class="content">
+<div class="all">
+	<h2>注&nbsp册</h2>
+	<div class="file">
+		<form id="form">
+			<div class="row">
+				<input type="text" value="" name="name" placeholder="昵称"
+					class="text large" id="name">
+				<input type="text" value="" class="error" readonly="readonly" id="errorname">
+			</div>
+			<div class="row">
+				<input type="text" value="" name="phone" placeholder="QQ邮箱(必填)"
+					class="text large" id="email">
+				<input type="text" value="" class="error" readonly="readonly" id="erroremail">
+			</div>
+			<div class="row" >
+				<input type="text" value="" name="code" placeholder="验证码(必填)"
+					class="codetext" id="vercode">
+					<input type="button" value="获取验证码" id="code">
+					<input type="text" value="" class="error" readonly="readonly" id="errorcode">
+			</div>
+			<div class="row">
+				<input type="password" class="text large" name="password"
+					placeholder="设置密码(6-20位字符)" class="text large" id="pwd">
+				<input type="text" value="" class="error" readonly="readonly" id="errorpwd">
+			</div>
+			<div class="row">
+				<input type="button" value="注 册" id="submit">
+				<input type="hidden" id="send-id"
+					value="5c31c376-95e8-4f25-9f37-a24968a17491">
+			</div>
+			<div class="row right">
+				<span class="text light" id="textlight">已有帐号，</span> <a
+					href="login.html" class="text dark">去登录</a>
+			</div>
+		</form>
+	</div>
+	</div>
+	
+<div class="platform">
+<div class="desc">
+使用第三方帐号快速注册
+</div>
+<div id="login-qq" class="platform-item" title="使用QQ登录">
+<i class="iconfont">&#xe65e;</i>
+</div>
+<div id="login-wechat" class="platform-item" title="使用微信登录">
+<i class="iconfont">&#xe654;</i>
+</div>
+</div>
+<div class="serve">
+<span class="text light">创建账号即视为已同意</span>
+<a href="#" target="_blank" class="text dark agreement">服务条款</a>
+</div>
+</div>
+</body>
+</html>

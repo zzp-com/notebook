@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<!-- namespace:命名空间 -->
+<mapper namespace="com.cunzhi.dao.FolderDao">
+		
+	<insert id="saveFolder" parameterType="com.cunzhi.entity.Folder" >
+		insert into cz_folder(folder_id,folder_title,email,folder_time,folder_aid)
+		values(#{folder_id},#{folder_title},#{email},#{folder_time},#{folder_aid})
+	</insert>	
+
+	<select id="findFolder" parameterType="Map" resultType="Map">
+		select folder_id,folder_title ,DATE_FORMAT(folder_time, '%Y-%m-%d %H:%i:%s') AS time 
+		 from cz_folder where email=#{email} and folder_aid =#{folder_aid}
+		Order By time desc;
+	</select>
+	
+	<select id="findMarkerFolder" parameterType="Map" resultType="Map">
+		select folder_id,folder_title ,DATE_FORMAT(folder_time, '%Y-%m-%d %H:%i:%s') AS time 
+		 from cz_folder where email=#{email} and folder_aid =#{folder_aid} and marker=1
+		Order By time desc;
+	</select>
+	
+	<delete id="delFol" parameterType="String">
+		DELETE FROM  cz_folder
+		WHERE folder_id=#{folder_id};
+	</delete>
+	
+	<delete id="delaFol" parameterType="String">
+		delete from cz_folder
+		where folder_aid=#{folder_id};
+	</delete>
+	
+	<delete id="deltFol" parameterType="String">
+		delete from cz_text
+		where folder_id=#{folder_id};
+	</delete>
+	
+	<update id="updateFolName" parameterType="String">
+		update cz_folder 
+		<set>
+		folder_title=#{folder_title}
+		</set>
+		where folder_id=#{folder_id}	
+	</update>
+	
+	
+</mapper>

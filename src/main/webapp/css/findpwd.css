@@ -1,0 +1,155 @@
+.reg-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top:80px;
+}
+div {
+    display: block;
+}
+body {
+    color: #333;
+    font-size: 14px;
+    font-family: "Helvetica Neue","Hiragino Sans GB","PingFang SC","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+}
+.fields {
+    margin: 0 20px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.fields .row {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.fields .row>input[type=text], .fields .row>input[type=password] {
+    width: 100%;
+}
+input.text.large, textarea.text.large, select.text.large {
+    height: 42px;
+}
+input.text, textarea.text, select.text {
+    box-sizing: border-box;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    resize: none;
+}
+input, textarea, div[contenteditable] {
+    outline: none;
+}
+button, input, select, textarea {
+    margin: 0;
+}
+button, input, select {
+    overflow: visible;
+}
+button, input, select, textarea {
+    font: inherit;
+}
+input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+    padding: 1px 0px;
+}
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb !important;
+}
+.fields .verify input {
+    width: 55% !important;
+}
+.fields #fetch-code {
+    width: 40%;
+    font-size: 14px;
+}
+.fields .verify .button {
+    float: right;
+}
+.button.large {
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    padding: 0 25px;
+}
+.button.dark {
+    background: #4a4a4a;
+}
+.button {
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: #72a7dc;
+    color: #fff;
+    height: 36px;
+    line-height: 36px;
+    outline: 0;
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 20px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    vertical-align: middle;
+}
+.fields .row .error {
+    line-height: 42px;
+    position: absolute;
+    left: 375px;
+    top: 0;
+    width: 200px;
+    display: none;
+}
+.error {
+    color: #ff4141;
+}
+.fields .submit {
+    display: block;
+}
+.reset-fields {
+    display: none;
+}
+.fields {
+    margin: 0 20px;
+}
+h2 {
+	text-align: center;
+	font-weight: normal;
+	margin: 35px 10px;
+}
+
+h2 {
+	display: block;
+	font-size: 1.5em;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	margin-left:-1%;
+	margin-bottom: 30px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>速记</title>
+<link rel="stylesheet" href="css/index.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="content">
+<div id="header">
+<div id="main">
+<div class="logo">
+<a href="#">
+<img src="images/jianshu.png">
+</a>
+</div>
+<div class="header-user">
+<a href="index.html" class="nav-item">首页</a>
+<a href="#" class="nav-item">高级版</a>
+<a href="#" class="nav-item">新功能</a>
+<a href="#" class="nav-item">帮助</a>
+<a href="login.html" class="login">登录</a>
+<a href="register.html" class="reg main-btn">注册</a>
+</div>
+</div>
+</div>	
+	
+<div class="welcome" style="background-image: url(images/flow.gif)">
+<div class="wrap">
+<div class="title">
+<h1>速记笔记<span>|</span>记录生活中的美好点滴</h1>
+<p>速记，记的不只是笔记，更是一种知识积累</p>
+</div>
+</div>
+</div>
+	
+<div id="footer">
+<div id="foot">
+<p id="g" >关于</p>&nbsp &nbsp &nbsp
+<p id="l">联系</p>
+</div>
+<div id="showg" style="display:none;">  
+	<p>版本1.0</p>
+	<p>版权所有:曾智平</p>
+</div>
+<div id="showl" style="display:none;">
+
+	<p>QQ</p>
+	<p>1814207915</p>
+	<p>邮箱</p>
+	<p>zzp@qq.com</p>
+</div>
+</div>	
+</div>
+</body>
+<script type="text/javascript">
+	$(function(){
+		var g=$("#g");
+		var l=$("#l");
+		//鼠标移入事件
+		g.mouseover(function(){
+			$(this).css("cursor","pointer");
+			$("#showg").show();
+			});
+		
+		//鼠标移除事件
+		g.mouseout(function(){
+			$("#showg").hide();
+			});
+		l.mouseover(function(){
+			$(this).css("cursor","pointer");
+			$("#showl").show();
+			});
+		l.mouseout(function(){
+			$("#showl").hide();
+			});
+		
+		
+	});
+</script>
+</html>

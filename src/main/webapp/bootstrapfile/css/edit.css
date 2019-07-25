@@ -1,0 +1,130 @@
+/*
+	编辑页面css样式
+*/
+
+
+html{
+	background: #d0cece;
+}
+body {
+    background-color: #d0cece;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 990613 */
+  src: url('//at.alicdn.com/t/font_990613_eso6mb59dcu.eot');
+  src: url('//at.alicdn.com/t/font_990613_eso6mb59dcu.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_990613_eso6mb59dcu.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_990613_eso6mb59dcu.woff') format('woff'),
+  url('//at.alicdn.com/t/font_990613_eso6mb59dcu.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_990613_eso6mb59dcu.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:20px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+    
+ .nav>li>a {
+    width: 50px;
+	cursor: pointer;
+
+ }
+ .glyphicon {
+    font-size: 20px;
+}
+.navbar-default {
+    height: 55px;
+}
+#editbody{
+	margin: 0 auto;
+    width: 56%;
+    background: #ffffff;
+    height: 720px;
+    margin-top: 110px;
+    Border:1px solid #b3b3b3;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+	}
+#editbody .col-md-12  #title{
+	border: none;
+    padding: 0;
+    font-size: 20px;
+     width: 56%;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    text-align: center;
+    margin-left: 33px;
+    margin-top:10px;
+     outline: none;
+}
+
+#editbody .col-md-12 #title:focus {
+   -webkit-box-shadow:none;
+    box-shadow: none;
+   box-shadow: 0px 2px 0px 0px #eede15;
+}
+#editbody .col-md-12  #title{
+	border-radius: 0px;
+	box-shadow: 0px 2px 0px 0px #eede15;
+}	
+#editbody .first .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    margin-top: 28px;
+}
+
+#editbody .first .input-group-addon {
+     background-color: #ffffff; 
+     border: none; 
+}
+#editbody .first .input-group .content {
+      width: 609px;
+    margin-left: 0px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-top: 9px;
+    word-wrap:break-word;  /*遇到空格整个单词显示不完就自动换行到下一行*/
+	word-break:break-all;  /*如果一行没有空格就到头截断单词换行*/
+    
+}
+#editbody .first .content{
+	border: none;
+	 outline: none;
+	  box-shadow: none;
+	 /*border:1px solid;*/
+}	
+#editbody .first .content:focus {
+ -webkit-box-shadow:none;
+  box-shadow: none;
+    
+}  
+
+#editbody .first .glyphicon-map-marker:before {
+    font-size: 14px;
+} 
+#editbody .first {
+    margin-top: -13px;
+    width: 710px;
+    margin-left: 27px;
+}  
+#editbody .two {
+    margin-top: -13px;
+    width: 710px;
+}  
+a#info {
+    width: 100px;
+    margin-left: -27px;
+    
+} 
+a#info:hover {
+	color: #777;
+	
+}
+#infos{
+	display: none;
+}
+  
+    

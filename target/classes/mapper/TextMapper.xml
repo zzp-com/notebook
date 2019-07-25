@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<!-- namespace:命名空间 -->
+<mapper namespace="com.cunzhi.dao.TextDao">
+		
+	<insert id="saveText" parameterType="com.cunzhi.entity.Text" >
+		insert into cz_text(text_id,text_title,text_content,email,text_time,folder_id,text_revicetime)
+		values(#{text_id},#{text_title},#{text_content},#{email},#{text_time},#{folder_id},#{text_revicetime})
+	</insert>
+	<!-- 这个可能是多余的 -->
+	<insert id="updateText" parameterType="com.cunzhi.entity.Text" >
+		update cz_text 
+		<set>
+		text_title=#{text_title},
+		text_content=#{text_content},
+		text_revicetime=#{text_revicetime}
+		</set>
+		where text_id=#{text_id} and email= #{email} 
+	</insert>
+	<!-- 查询文档 -->
+	<select id="findoc" parameterType="Map" resultType="Map">
+		select text_id, text_title,marker,DATE_FORMAT(text_time, '%Y-%m-%d %H:%i:%s') AS time 
+		from cz_text  where email=#{email} and folder_id =#{folder_id}
+		 Order By time desc;
+	</select>
+	
+	<select id="findmarkerdoc" parameterType="Map" resultType="Map">
+		select text_id, text_title,marker,DATE_FORMAT(text_time, '%Y-%m-%d %H:%i:%s') AS time 
+		from cz_text  where email=#{email} and folder_id =#{folder_id} and marker=1
+		 Order By time desc;
+	</select>
+	
+	<select id="findrecendoc" parameterType="Map" resultType="Map">
+		select text_id, text_title,marker,DATE_FORMAT(text_time, '%Y-%m-%d %H:%i:%s') AS time 
+		from cz_text  where email=#{email}  and text_revicetime>=#{date}
+		 Order By time desc;
+	</select>
+	
+	<!-- 查询内容 -->
+		<select id="findContent" parameterType="String" resultType="String">
+		select text_content  from cz_text where text_id=#{text_id}
+	</select>
+	
+	<insert id="updateDoc" parameterType="String" >
+		update cz_text 
+		<set>
+		marker=#{marker}
+		</set>
+		where text_id=#{text_id}
+	</insert>
+	
+	<delete id="delDoc" parameterType="String">
+		DELETE FROM cz_text WHERE text_id=#{text_id}
+	</delete>
+	
+	<update id="updateDocName" parameterType="String">
+		update cz_text 
+		<set>
+		text_title=#{text_title}
+		</set>
+		where text_id=#{text_id}	
+	</update>
+	
+</mapper>
